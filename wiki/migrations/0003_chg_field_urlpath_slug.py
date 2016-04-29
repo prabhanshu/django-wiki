@@ -9,6 +9,7 @@ class Migration(migrations.Migration):
     dependencies = [
         ('django_notify', '0001_initial'),
         ('wiki', '0001_initial'),
+        ('wiki', '0002_remove_article_subscription'),
     ]
 
     operations = [
