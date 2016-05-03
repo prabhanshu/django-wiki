@@ -11,7 +11,7 @@
 <form class="form-search directory-toolbar">
 <div class="well well-small">
   <div class="btn-group pull-left">
-    {% if urlpath.parent %}
+    {% if urlpath.parent and urlpath.parent.parent %}
     <a href="{% url 'wiki:dir' path=urlpath.parent.path %}" class="btn">
       <span class="icon-arrow-up"></span>
       {% trans "Up one level" %}
