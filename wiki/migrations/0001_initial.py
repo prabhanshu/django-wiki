@@ -312,4 +312,9 @@ class Migration(migrations.Migration):
             field=models.ForeignKey(related_name='owned_articles', blank=True, to=settings.AUTH_USER_MODEL, help_text='The owner of the article, usually the creator. The owner always has both read and write access.', null=True, verbose_name='owner'),
             preserve_default=True,
         ),
+        migrations.AlterField(
+            model_name='URLPath',
+            name='slug',
+            field=models.SlugField(max_length=255, null=True, verbose_name='slug', blank=True),
+        ),
     ]
